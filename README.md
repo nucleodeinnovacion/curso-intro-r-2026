@@ -18,15 +18,21 @@ Clase 8	3/6
 ## Temario
 
 *Clase 1: Introducción al entorno y trabajo con proyectos*
-- Repaso de la instalación, Paseo por el entorno de R, Introducción a proyectos: armar un proyecto y crear un archivo .r dentro del proyecto.
-Introducción  a git desde github desktop.(armamos un user, ejercicio de git pull).
+- Repaso de la instalación
+- Paseo por el entorno de R
+- Introducción a proyectos: armar un proyecto y crear un archivo .r dentro del proyecto.
+- Introducción a git desde github desktop.(armamos un user, ejercicio de git pull).
 
 *Clase 2: Operadores y tipos de datos*
-Operadores, objetos, data frames y listas. Tipos de datos y “matrices” Abrir una base con read.csv() y ver con str()
+- Operadores, objetos, data frames y listas. 
+- Tipos de datos y “matrices” 
+- Carga de base con read.csv() y exploración básica con str()
 
 *Clase 3: Introducción a tidyverse*
-Filosofía tidy y librería tidyverse, dplyr y los verbos básicos (mutate, select, filter, summarise,arrange y across), Uso del pipe
-Condicionales: case_when() + ifelse() 
+- Filosofía tidy y librería tidyverse
+- dplyr y los verbos básicos (mutate, select, filter, summarise,arrange y across)
+- Uso del pipe
+- Condicionales: case_when() + ifelse() 
 
 *Clase 4: Manipulación de tablas* 
 Pivoteo (long y wide) y joins
