@@ -1,21 +1,9 @@
 ## Curso de introducción a R
 
-## Agenda
+## Agenda de clases 
 🗓 Todos los miércoles del 15/4 al 3/6
 
 🕘 18:30 a 20:30 (UTC-3)
-
-Clase	Fecha	
-Clase 1	15/4	
-Clase 2	22/4
-Clase 3	29/4
-Clase 4	6/5
-Clase 5	13/5	
-Clase 6	20/5	
-Clase 7	27/5
-Clase 8	3/6
-
-## Temario
 
 *Clase 1: Introducción al entorno y trabajo con proyectos*
 - Repaso de la instalación
