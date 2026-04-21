@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # Curso de introducción a R
 
 ## 🎯 Objetivo del curso
