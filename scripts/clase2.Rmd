@@ -405,8 +405,8 @@ Desde una **url**:
 library(readr)
 
 #Defino url
-url <- ("https://cdn.buenosaires.gob.ar/datosabiertos/datasets/ministerio-de-desarrollo-humano-y-habitat/unidades-territoriales-de-inclusion-urbana/unidades-territoriales-de-inclusion-urbana.csv")
-unidades_inclusion_urbana <- read_csv(url)
+url <- "https://archivo.infraestructura.gob.ar/dataset/ssisu/20231205_info_publica_datos_barrios.csv"
+barrios_populares <- read_csv(url)
 
 ```
 
@@ -422,14 +422,15 @@ help(read_csv)
 Desde archivo **csv**:
 
 ```{r}
-#Defino la ruta
-# setwd("C:/Users/Melina/OneDrive/Documentos/Proyectos R/Curso-R/")
 #Chequeo mi ruta
 getwd()
 
+#Reviso archivos
+list.files("../data/clase2")
+
 #Importo
 clase <- "clase2"
-barrios_populares<-read_csv(paste0("../data/", clase, "/datosbp.csv"))
+barrios_populares<-read_csv(paste0("../data/", clase, "/20231205_info_publica_datos_barrios.csv"))
 
 
 ```
@@ -440,9 +441,13 @@ Desde archivo **.sav**:
 # install.packages("haven")
 library(haven)
 
-clase<-"clase1"
-base <-read_sav(paste0("../data/",clase, "/Base Portenos Octubre 2019.sav"))
+clase<-"clase2"
+base <-read_sav(paste0("../data/",clase, "/Base Porteños 2023.sav"))
 
+# para extraer nombres de variables
+labels <- sapply(base, function(x) attr(x, "label"))
+
+colnames(base) <- labels
 ```
 
 Desde archivo **.xlsx**: 
@@ -453,7 +458,7 @@ library(readxl)
 
 #Importo
 clase<-"clase2"
-encuesta_movilidad <-  read_excel(paste0("../data/",clase, "/Hogar_ENMODO18.xlsx"))
+intervenciones <-  read_excel(paste0("../data/",clase,"/intervenciones-2025-datos-abiertos.xlsx"))
  
 ```
 
@@ -471,9 +476,9 @@ A un archivo **.xlsx**:
 
 ```{r}
 # install.packages("xlsx")
-library(xlsx)
+library(writexl)
 
-write.xlsx(registro, paste0("../data/", clase, "/registro.xlsx"), row.names = F)
+write_xlsx(registro, paste0("../data/", clase, "/registro.xlsx"))
 ```
 
 A un archivo **.sav**:
